@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AllServicesOk" verbose="1" >
+    <test name="TestServer" >
+        <classes>
+            <class name="AllApiServicesOk" />
+        </classes>
+    </test>
+</suite>
