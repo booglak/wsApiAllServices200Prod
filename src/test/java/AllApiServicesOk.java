@@ -4,6 +4,7 @@ import static com.jayway.restassured.RestAssured.given;
 public class AllApiServicesOk {
 
     //booglak@gmail.com
+
     String adminWs = "Basic Ym9vZ2xha0BnbWFpbC5jb206MjIyMjIy";
     String host = "https://worldskillsacademy.ru:8080";
 
