@@ -20,10 +20,67 @@ public class AllApiServicesOk {
     }
 
     @Test
-    public void downloadGroupArchive(){
+    public void competenceService(){
         given().header("Authorization", adminWs).
-                when().get(host + "/FileService/Archive/Group/" + archiveGroupId).
-                then().statusCode(200).
-                body(new StringContains("ValueResponseOfstring"));
+                when().get(host + "/CompetenceService/1").
+                then().statusCode(200);
     }
+
+    @Test
+    public void fileService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/FileService/Report/Competence/").
+                then().statusCode(200);
+    }
+
+    @Test
+    public void groupParticipantService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/GroupParticipantService/").
+                then().statusCode(200);
+    }
+
+    @Test
+    public void groupService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/GroupService/1").
+                then().statusCode(200);
+    }
+
+    @Test
+    public void organizationService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/OrganizationService/").
+                then().statusCode(200);
+    }
+
+    @Test
+    public void placeService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/PlaceService/Region/").
+                then().statusCode(200);
+    }
+
+    @Test
+    public void programService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/ProgramService/").
+                then().statusCode(200);
+    }
+
+    @Test
+    public void reportService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/ReportService/Competence/").
+                then().statusCode(200);
+    }
+
+    @Test
+    public void userService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/UserService/1234").
+                then().statusCode(200);
+    }
+
+
 }
