@@ -1,12 +1,8 @@
-
 import org.testng.annotations.Test;
-
 import static com.jayway.restassured.RestAssured.given;
 
 public class AllApiServicesOk {
 
-
-    String admin = "Basic emxhdGFib2dvbWF6QHlhbmRleC5ydTpKeVJ5OW5Q";
     //booglak@gmail.com
     String adminWs = "Basic Ym9vZ2xha0BnbWFpbC5jb206MjIyMjIy";
     String host = "https://worldskillsacademy.ru:8080";
@@ -81,6 +77,5 @@ public class AllApiServicesOk {
                 when().get(host + "/UserService/1234").
                 then().statusCode(200);
     }
-
 
 }
