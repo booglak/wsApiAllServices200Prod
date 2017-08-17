@@ -1,4 +1,4 @@
-import org.hamcrest.core.StringContains;
+
 import org.testng.annotations.Test;
 
 import static com.jayway.restassured.RestAssured.given;
