@@ -24,6 +24,20 @@ public class AllApiServicesOk {
     }
 
     @Test
+    public void courseParticipantService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/CourseParticipantService/10320").
+                then().statusCode(200);
+    }
+
+    @Test
+    public void courseService(){
+        given().header("Authorization", adminWs).
+                when().get(host + "/CourseService/Course/").
+                then().statusCode(200);
+    }
+
+    @Test
     public void fileService(){
         given().header("Authorization", adminWs).
                 when().get(host + "/FileService/Report/Competence/").
