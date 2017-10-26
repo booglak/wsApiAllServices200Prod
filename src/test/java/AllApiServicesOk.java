@@ -89,7 +89,7 @@ public class AllApiServicesOk {
     @Test
     public void userService(){
         given().header("Authorization", adminWs).
-                when().get(host + "/UserService/1234").
+                when().get(host + "/UserService/Role/").
                 then().statusCode(200);
     }
 
